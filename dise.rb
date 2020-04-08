@@ -5,3 +5,5 @@ number = gets.to_i # ввод из консоли числа кубиков, п�
 number.times do
   puts rand(6) + 1
 end
+#
+#
