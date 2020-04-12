@@ -4,9 +4,12 @@ def show_rolling_die
     sleep 0.01
   end
 end
-
-puts "How many dice?"
+score = 0
+print "How many dice? "
 user_input = gets.to_i
 user_input.times do
-  puts rand(6) + 1
+  dice = rand(6) + 1
+  score += dice
+  puts dice
 end
+puts "Sum of dice: #{score}"
